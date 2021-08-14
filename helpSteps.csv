@@ -1,0 +1,12 @@
+step;text;icon
+1;Start at Stats Visualitzation section (left menu), when active, Filters Menu appears;chart-bar
+2;Input the coordinates or perform a search by ID;search
+3;Choose which populaitons or metapopulations you would like to see;globe-africa
+4;Specify whether you prefer to see positions that reported a extreme value of iHS or nSL;stream
+5;Modify the information you want to see displayed in the functional characterization tab;layer-group
+6;Choose the clock model, years per generation and any other filters you want to apply in the age informaiton;hourglass
+7;Specify whether you prefer to see positions that reported a extreme value of iSAFE or all of them;asterisk
+8;ALL CHANGES NEED TO BE CONFIRMED BY THE CLICKING UPDATE BUTTON;redo-alt
+9;In the Report section you can see all the information for one population;file-alt
+10;You can download the raw data  changing to "Download" section (left menu);file-download
+11;For more information, check "About Us" section;info

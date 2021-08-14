@@ -1,0 +1,246 @@
+<html>
+<h1 style="font-size:60px; margin:10px;"><strong>PopHumanVar</strong></h1>
+<p style="font-size:30px;"><em>An Interactive App for the Functional Characterization and Prioritization of Genomic Variants</em></p>
+<body>
+	<div id="contentBox">
+		<a href="#section_1"><strong>Section 1 |</strong> Description and contents of PopHumanVar</a>
+		<ol>
+			<a href="#Intro"><li>What is PopHumanVar?</li></a>
+			<a href="#1000GP"><li>Genomics data: the 1000 Genomes Project, phase 3</li></a>
+			<a href="#Statistics"><li>Selection statistics</li></a>
+			<ul>
+				<a href="#iHS"><li>Integrative haplotype score (iHS)</li></a>
+				<a href="#nSL"><li>Number of segregating sites by length (nSL)</li></a>
+				<a href="#iSFE"><li>Integrated Selection of Allele Favored by Evolution (iSAFE)</li></a>
+			</ul>
+			<a href="#Functional"><li>Functional annotations</li></a>
+			<ul>
+				<a href="#Snpeff"><li>SnpEFF</li></a>
+				<a href="#ReguDB"><li>RegulomeDB</li></a>
+				<a href="#ClinVar"><li>ClinVar</li></a>
+				<a href="#GWAScat"><li>GWAS Catalog</li></a>
+				<a href="#DisGeNET"><li>DisGeNET</li></a>
+			</ul>
+			<a href="#Age"><li>Age information</li></a>
+			<ul>
+				<a href="#AVA"><li>Atlas of Variant Age</li></a>
+			</ul>
+		</ol>
+		<a href="#section_2"><strong>Section 2 | </strong>Tutorial: PopHumanVar with an example: selection at the <i>EDAR</i> gene locus</a>
+		<ol>
+			<a href="#Region"><li>Region of interest</li></a>
+			<a href="#PHV"><li>Characterization of the region with PopHumanVar</li></a>
+			<ul>
+				<a href="#Navigate"><li>Navigate to the region of interest</li></a>
+				<a href="#Select"><li>Select one or more populations</li></a>
+				<a href="#Explore"><li>Explore the region and its genetic variants</li></a>
+			</ul>
+			<a href="#Downloading"><li>Downloading raw data</li></a>
+		</ol>
+	</div>
+	<br>
+	<br>
+	<br>
+	<a id="section_1"><h2><strong>Section 1 |</strong> Description and contents of PopHumanVar</h2></a>
+	<a id="Intro"><h3>1. What is PopHumanVar?</h3></a>
+	<p style="text-align: left;">PopHumanVar is an interactive online application that is designed to facilitate the exploration and thorough analysis of candidate genomic regions under selection, generating useful summary reports of prioritized variants that are putatively causal of recent selective sweeps.</p>
+	<p style="text-align: left;">It compiles and graphically represents selection statistics based on linkage disequilibrium, a comprehensive set of functional annotations, and recent genealogical estimations of variant age for single nucleotide variants (SNVs) of the 22 non-admixed populations of the phase 3 of the 1000 Genomes Project (1000GP). Specifically, PopHumanVar amasses data either computed or compiled from the following data sources: the integrative haplotype score (iHS), the number of segregating sites by length (nSL), the integrated selection of allele favored by evolution (iSAFE), SnpEFF, <a href="https://regulomedb.org/regulome-search/" target="_blank">RegulomeDB</a>, <a href="https://www.ncbi.nlm.nih.gov/clinvar/" target="_blank">ClinVar</a>, <a href="https://www.ebi.ac.uk/gwas/" target="_blank">GWAS Catalogue</a>, <a href="https://www.disgenet.org/home/" target="_blank">DisGeNET</a> and GEVA (<a href="https://human.genome.dating/info/cite" target="_blank">Human Genome Dating</a>).</p>
+	<p style="text-align: left;">As such, PopHumanVar is complementary to our previous genome browser PopHuman (<a href="https://pophuman.uab.cat/" target="_blank">https://pophuman.uab.cat</a>) and database of candidate selection regions PopHumanScan (<a href="https://pophumanscan.uab.cat/" target="_blank">https://pophumanscan.uab.cat</a>), allowing researchers to focus on particular selective sweeps, pinpoint the corresponding causal variants, and estimate allele age (Figure 1).</p><br>
+
+	<div class="pictureStyle" style="text-align:center">
+		<img src="Figure_1.png" alt="Figure_1" width="75%" height="75%" /><br />
+		<strong>Figure 1 |</strong> Graphical abstract.
+	</div>
+	<br><br>
+	<a id="1000GP"><h3>2. Genomics data: the 1000 Genomes Project, phase 3</h3></a>
+	<p style="text-align: left;">The 1000 Genomes Project<a href="#Ref1"><Sup>[1]</sup></a> (1000GP) set out to provide one of the most comprehensive descriptions of human genetic variation by applying whole-genome sequencing to a diverse set of individuals from several populations around the world. In its final phase (phase 3), the consortium published the reconstruction of the genomes of 2,504 individuals from 26 populations using a combination of low-coverage whole-genome sequencing, deep exome sequencing, and dense microarray genotyping (The 1000 Genomes Project Consortium 2015; Figure 2). With 84.7 million single nucleotide polymorphisms (SNPs), the resource is estimated to include >99% of SNP variants with a frequency of >1% for a variety of ancestries. From the 26 analyzed populations, we excluded individuals from admixed American populations (<i>i</i>.<i>e</i>., CLM, MXL, PEL, and PUR). Overall, we considered 1,944 individuals from 22 different populations belonging to 4 metapopulations (AFR, EAS, EUR, SAS).</p>
+
+		<div class="infogram-embed" data-id="pophuman-20205262" data-type="interactive" data-title="1000GP" width="90%" height="90%"></div><script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="https://e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/pophuman-20205262" style="color:#989898!important;text-decoration:none!important;" target="_blank"><strong>Figure 2 | </strong>Populations of the 1000 Genomes Project, phase 3. From <a href="https://pophuman.uab.cat/">https://pophuman.uab.cat/</a>.</a><br></div>
+
+		<br>
+		<br>
+		<a id="Statistics"><h3>3. Selection statistics</h3></a>
+		<p style="text-align: left;">PopHumanVar represents three different population metrics, computed genome-wide for each population:</p>
+		<ul>
+			<li style="text-align: left;"><strong><a id="iHS">Integrative haplotype score (iHS)</a></strong><a href="#Ref2"><Sup>[2]</sup></a>: It is an haplotype-based statistic that tracks the decay of haplotype homozygosity for both ancestral and derived haplotypes. It has good power to detect selective sweeps at a moderate frequency (50%–80%).</li>
+				<li style="text-align: left;"><strong><a id="nSL">Number of segregating sites by length (nSL):</a></strong><a href="#Ref3"><Sup>[3]</sup></a>: It is also an haplotype-based statistic. It combines information on the distribution of fragment lengths, defined by pairwise differences, with the distribution of the number of segregating sites between all pairs of chromosomes. It is better at capturing soft sweeps than iHS.</li>
+					<li style="text-align: left;"><strong><a id="iSFE">Integrated Selection of Allele Favored by Evolution (iSAFE):</a></strong><a href="#Ref4"><Sup>[4]</sup></a>: It exploits coalescent-based signals in the 'shoulders' of the selective sweep (<i>i</i>.<i>e</i>., genomic regions proximal to the region under selection that still carry the selection signal) to rank all mutations based on their contribution to the selection signal.</li>
+					</ul>
+					<p style="text-align: left;"><i>Methodological details:</i> All selection statistics were computed on the 22 non-admixed populations of the phase 3 of the 1000GP, including non-inbred individuals as specified by Gazal et al. (40). We analyzed autosomal biallelic SNVs present in the 1000GP pilot accessibility mask. To compute iHS and nSL we used selscan v1.2.0a together with norm v1.2.1a<a href="#Ref5"><Sup>[5]</sup></a>. In the case of iHS, we used the sex-averaged recombination map from Bhérer et al. (2017)<a href="#Ref6"><Sup>[6]</sup></a>. To compute iSAFE, we analyzed overlapping sliding windows of 3 Mbp, with a 1 Mbp overlap, all along the autosomal chromosomes. From each window, we kept values for the 1 Mbp middle chunk and discarded values in the shoulders. In order to facilitate the genome-wide approach, we ran iSAFE with default parameters, but ignoring the gaps and increasing the maximum rank parameter up to the window size (MaxRank = window = 300) in order to retrieve values for all SNVs in the window.</p><br>
+						<br>
+						<a id="Functional"><h3>4. Functional annotations</h3></a>
+						<p style="text-align: left;">Variants are further characterized with functional annotations extracted from the following publicly available databases:</p>
+
+						<a id="Snpeff"><h4>Snpeff</h4></a>
+						<p style="text-align: left;">SnpEFF predicts and annotates the functional effects of genetic variants<a href="#Ref7"><Sup>[7]</sup></a>. Effects are classified into four different categories based on their impact:</p>
+							<ul>
+								<li style="text-align: left;"><strong>High:</strong>splice donor variant, splice acceptor variant, stop gained, frameshift variant, stop lost, start lost, bidirectional gene fusion</li>
+								<li style="text-align: left;"><strong>Moderate:</strong>disruptive inframe insertion, conservative inframe insertion, disruptive inframe deletion, conservative inframe deletion, missense variant</li>
+								<li style="text-align: left;"><strong>Low:</strong>splice region variant, start retained variant, stop retained variant, synonymous variant, 5-utr premature start codon gain variant, initiator codon variant</li>
+								<li style="text-align: left;"><strong>Modifiers:</strong>5-utr variant, 3-utr variant, intron variant, non-coding transcript exon variant, non-coding transcript variant, upstream gene variant, downstream gene variant, intragenic variant, intergenic region</li>
+							</ul><br>
+
+							<a id="ReguDB"><h4>RegulomeDB</h4></a>
+							<p style="text-align: left;">RegulomeDB (v.2.0.3) predicts and annotates the regulatory effects of intergenic variants<a href="#Ref8"><Sup>[8]</sup></a>. Evidence is compiled from GEO, ENCODE, and the published literature, and it includes known as well as predicted regulatory DNA elements, such as regions of DNase hypersensitivity sites, transcription factor binding sites, and promoter regions that have been biochemically characterized to regulate transcription. Evidence is categorized into the following scoring scheme:</p>
+								<ul style="list-style: none;">
+									<li><strong>1a &rarr;</strong> eQTL + TF binding + matched TF motif + matched DNase Footprint + DNase peak</li>
+									<li><strong>1b &rarr;</strong> eQTL + TF binding + any motif + DNase Footprint + DNase peak</li>
+									<li><strong>1c &rarr;</strong> eQTL + TF binding + matched TF motif + DNase peak</li>
+									<li><strong>1d &rarr;</strong> eQTL + TF binding + any motif + DNase peak</li>
+									<li><strong>1e &rarr;</strong> eQTL + TF binding + matched TF motif</li>
+									<li><strong>1f &rarr;</strong> eQTL + TF binding / DNase peak</li>
+									<li><strong>2a &rarr;</strong> TF binding + matched TF motif + matched DNase Footprint + DNase peak</li>
+									<li><strong>2b &rarr;</strong> TF binding + any motif + DNase Footprint + DNase peak</li>
+									<li><strong>2c &rarr;</strong> TF binding + matched TF motif + DNase peak</li>
+									<li><strong>3a &rarr;</strong> TF binding + any motif + DNase peak</li>
+									<li><strong>3b &rarr;</strong> TF binding + matched TF motif</li>
+									<li><strong>4 &rarr;</strong> TF binding + DNase peak</li>
+									<li><strong>5 &rarr;</strong> TF binding or DNase peak</li>
+									<li><strong>6 &rarr;</strong> Motif hit</li>
+									<li><strong>7 &rarr;</strong> Other</li>
+								</ul><br>
+
+								<a id="ClinVar"><h4>ClinVar</h4></a>
+								<p style="text-align: left;">ClinVar (updated on 2021/03/04) is one of the largest catalogs of clinically-associated genetic variants<a href="#Ref9"><Sup>[9]</sup></a>. It is a freely accessible, public archive of reports that cover relationships among medically-relevant variants and phenotypes, with supporting evidence. It rates the clinical significance of variant-disease associations into the following categories:
+								</p>
+								<ul><strong>
+									<li>Benign</li>
+									<li>Likely benign</li>
+									<li>Uncertain significance</li>
+									<li>Likely pathogenic</li>
+									<li>Pathogenic</li>
+									<li>Drug response</li>
+									<li>Association</li>
+									<li>Risk factor</li>
+									<li>Protective</li>
+									<li>Affects</li>
+									<li>Conflicting data from submitters</li>
+									<li>Other</li>
+									<li>Not provided</li>
+								</strong></ul><br>
+
+								<a id="GWAScat"><h4>GWAS Catalog</h4></a>
+								<p style="text-align: left;">The GWAS Catalog (v1.0.2) is a quality-controlled, manually-curated, literature-derived collection of published genome-wide association studies assaying at least 100,000 genetic variants<a href="#Ref10"><Sup>[10]</sup></a>. PopHumanVar compiles the number of associations in the GWAS Catalog for each variant, as well as the specific traits reported.</p><br>
+
+									<a id="DisGeNET"><h4>DisGeNET</h4></a>
+									<p style="text-align: left;">DisGeNET (v.7.0) is a platform containing one of the largest publicly-available collections of genes and variants associated with human diseases<a href="#Ref11"><Sup>[11]</sup></a>. It integrates data from expert-curated repositories, homogeneously annotated with controlled vocabularies and community-driven ontologies. It provides several original metrics to assist the prioritization of genotype-phenotype relationships, such as the disease specificity of a given variant, or the evidence index.</p><br>
+
+										<a id="Age"><h3>Age information</h3></a>
+										<a id="AVA"><h4>Atlas of Variant Age</h4></a>
+										<p style="text-align: left;">The Atlas of Variant Age is a publicly-available online database that contains age estimation for more than 45 million variants in the human genome<a href="#Ref4"><Sup>[4]</sup></a>. Ages have been estimated using the Genealogical Estimation of Variant Age (GEVA), a method that involves coalescent modeling to infer the time to the most recent common ancestor (TMRCA) between individual genomes.</p><br>
+
+											<div id="line"><hr  style="" /></div>
+											<br>
+
+											<a id="section_2"><h2><strong>Section 2| </strong>Tutorial: PopHumanVar with an example: selection at the <i>EDAR</i> gene locus</h2></a>
+											<a id="Region"><h3>1. Region of interest</h3></a>
+											<p style="text-align: left;">In this tutorial, we will focus on a genomic region of 1.15Mb in chromosome 2(<strong>chr2:109500927..109615828</strong>).The region contains the gene <strong><i>EDAR</i></strong> &#8212;<i>Ectodysplasin A Receptor</i>&#8212; a cell-surface receptor that, upon binding to its ligand, induces an intracellular cascade leading to the activation of the transcription factor NF-&#1082;B <a href="#Ref13"><Sup>[13]</sup></a>.</p>
+												<p style="text-align: left;"><i>EDAR</i> is a well-studied gene. It is involved in the development of hair follicles, teeth, and sweat glands. It has frequently been reported in numerous genome-wide scans for positive selection in humans and is one of the candidate regions cataloged in <strong>PopHumanScan</strong><a href="#Ref14"><Sup>[14]</sup></a> (Figure 3). It shows signatures of selection for haplotype-based statistics (<i>i</i>.<i>e</i>., iHS and XP-EHH) in East-Asian populations, with the highest iHS value found in the Southern Han Chinese (CHS) population.</p>
+
+													<div class="pictureStyle" style="text-align:center">
+														<img src="Figure_3.png" alt="Figure_3" width="80%" height="80%" /><br />
+														<strong>Figure 3 |</strong> Summary report of the <i>EDAR</i> candidate region in PopHumanScan. Direct link to the database <a href=https://pophumanscan.uab.cat/tables.php?geneId=EDAR target="_blank">here</a>.
+													</div>
+													<br><br>
+
+													<p style="text-align: left;">In addition, the region shows extreme values (<i>i</i>.<i>e</i>., more than two standard deviations away from the mean value) for the haplotype-based statistic iHS, and the Site Frequency Spectrum (SFS)-based statistics Tajima’s D, Fu and Li’s F and D, and Fay and Wu's H, as displayed in PopHuman<a href="#Ref15"><Sup>[15]</sup></a> (Figure 4).</p><br>
+
+														<div class="pictureStyle" style="text-align:center">
+															<img src="Figure_4.png" alt="Figure_4" width="80%" height="80%" /><br />
+															<strong>Figure 4 | </strong>Visualization of the <i>EDAR</i> candidate region in PopHuman. Direct link to the genomic browser <a href=https://pophuman.uab.cat/?loc=chr2%3A109238501..109873000&tracks=DNA%2Cgene_annotations%2CiHS_CHS_10kb%2CTajima_D_CHS_10kb%2CFayWu_H_CHS_10kb%2CFuLi_D_CHS_10kb%2CFuLi_F_CHS_10kb&highlight=chr2%3A109498924..109622651 target="_blank">here</a>.</div><br>
+															<br>
+															<a id="PHV"><h3>2. Characterization of the region with PopHumanVar</h3></a>
+															<a id="Navigate"><h4>Navigate to the region of interest</h4></a>
+															<p style="text-align: left;">Open <strong>PopHumanVar</strong> at <a href=https://pophumanvar.uab.cat>https://pophumanvar.uab.cat</a>. Find the section <strong>FILTERS MENU</strong>&rarr; <strong>Coordinates</strong> on the left-side menu. To navigate to the target region, either type its coordinates (<i>i</i>.<i>e</i>., Chromosome: 2; Start Position:109500927; End Position: 109615828), or use the “Quick search” blue button to open a search dialogue and type the symbol of the gene in the search bar (<i>i</i>.<i>e</i>., Enter an ID: <i>EDAR</i>). Remember to press the Update button to apply filters.</p><br>
+
+															<a id="Select"><h4>Select one or more populations</h4></a>
+															<p style="text-align: left;">In which populations are you interested? In this tutorial, we will focus on the Southern Han Chinese (CHS) population, which showed the most significant signatures in PopHumanScan (see section <a href="#Region">1. Region of interest</a>). We will also include other populations for comparison.</p>
+															<p style="text-align: left;">Find the section <strong>FILTERS MENU</strong>&rarr; <strong>Populations</strong> on the left-side menu. Select CHS and at least one population from each of the other metapopulations (e.g., BEB &#8212;South Asia&#8212;, CEU &#8212;Europe&#8212;, and YRI &#8212;Africa&#8212;). Remember to press the Update button to apply filters.</p><br>
+
+															<a id="Explore"><h4>Explore the region and its genetic variants</h4></a>
+															<p style="text-align: left;">Information in PopHumanVar is distributed into several tabs, all accessible from the left-side menu:</p>
+															<ul style="list-style: none;">
+																<li><strong>Stats Visualization&rarr;</strong> Selection (iHS & nSL)</li>
+																<li><strong>Stats Visualization&rarr;</strong> Favored Mutation (iSAFE)</li>
+																<li><strong>Stats Visualization&rarr;</strong> Functional Description</li>
+																<li><strong>Stats Visualization&rarr;</strong> Age Information</li>
+																<li><strong>Stats Visualization&rarr;</strong> Summary Report</li>
+															</ul><br>
+
+															<h4>Stats Visualization&rarr; Selection (iHS & nSL)</h4>
+															<p style="text-align: left;">The first tab <strong>Stats Visualization&rarr; Selection (iHS & nSL)</strong>&#8212; represents the general distributions of iHS and nSL values in each of the selected populations. In the current region of interest, East-Asian populations (green; including CHS) show a wider distribution and higher mean values of iHS and nSL than other metapopulations (Figure 5).</p><br>
+															<div class="pictureStyle" style="text-align:center">
+																<img src="Figure_5.png" alt="Figure_5" width="90%" height="90%" /><br />
+																<strong>Figure 5 | </strong>Selection statistics for the <i>EDAR</i> gene region as shown in PopHumanVar. (a) iHS. (b) nSL
+															</div><br><br>
+															<p style="text-align: left;">Below the general distributions of iHS and nSL, the values of these two statistics are represented for all genetic variants along the region of interest. Variants with extreme values (<i>i</i>.<i>e</i>., top 0.5%) of either iHS and/or nSL can be highlighted from the <strong>FILTERS MENU</strong>&rarr; <strong>Selection</strong> on the left-side menu (remember to press the Update button to apply filters). In the current region of interest, extreme iHS values are almost exclusive to East-Asians (Figure 6).</p><br>
+
+															<div class="pictureStyle" style="text-align:center">
+																<img src="Figure_6.png" alt="Figure_6" width="80%" height="80%" /><br />
+																<strong>Figure 6 | </strong>iHS values for genetic variants along the <i>EDAR</i> locus region as shown in PopHumanVar. Extreme values (<i>i</i>.<i>e</i>., top 0.5%) of both iHS and nSL are highlighted (<i>i</i>.<i>e</i>., represented in blue or red).
+															</div><br><br>
+
+															<h4>Stats Visualization&rarr; Favored Mutation (iSAFE)</h4>
+															<p style="text-align: left;">AQUEST PARAGRAF S'HA D'ARREGLAR</p>
+															<p style="text-align: left;">The tab <strong>Stats Visualization&rarr; Favored Mutation (iSAFE)</strong>&#8212; displays the distribution of iSAFE in all selected populations. Please note that only variants reporting an iSAFE score higher than 0.05 are shown by default to keep information manageable. Variants with extreme iSAFE values (<i>i</i>.<i>e</i>., top 0.01%) can be highlighted from the FILTERS MENU → Favored Mutation (iSAFE) on the left-side menu (remember to press the Update button to apply filters). In the current region of interest, extreme iSAFE values are almost exclusive to East-Asians (Figure 9). <br>
+															</p>
+															<div class="pictureStyle" style="text-align:center">
+																<img src="Figure_7.png" alt="Figure_7" width="80%" height="80%" /><br />
+																<strong>Figure 7 | </strong>iSAFE values for genetic variants along the <i>EDAR</i> gene region as shown in PopHumanVar. Extreme iSAFE values (<i>i</i>.<i>e</i>., top 0.01%) are those over the threshold line.
+															</div><br><br>
+
+															<h4>Stats Visualization&rarr; Functional Description</h4>
+															<p style="text-align: left;">The second tab <strong>Stats Visualization&rarr; Functional Description</strong>&#8212; characterize genetic variants in the region according to several functional annotations. For instance, by having a glimpse into the different graphs in this tab, we first notice that there are no variants reporting a high impact effect according to <strong>SnpEFF</strong> and that the most extreme effect in this region is due to several missense variants, which are categorized as moderate impact (Figure 7a). Second, 24 variants report a <strong>RegulomeDB</strong> rank score of 2, meaning that there is no evidence of eQTLs supporting the regulatory potential of the variants in this region, although they do include transcription factor binding sites (Figure 7b). Third, even though most of the variants in the region are either benign or of uncertain significance according to <strong>ClinVar</strong>, 17 of them are pathogenic variants, and some others might also have clinically-relevant effects (Figure 7c). Fourth, there is a genetic variant reported 17 times in GWAS studies (rs3827760), and several others have been reported once, according to the <strong>GWAS catalog</strong> (Figure 7d). In addition, traits associated with variants in this region are related to blood protein levels, lung function, beard thickness, and hair color and shape, among others. Finally, 16 genetic variants in this region are reported in <strong>DisGeNET</strong>, all with the highest index of disease association (meaning that they only contribute to one specific disease &#8212;ectodermal dysplasia&#8212;) (Figure 7e). Please note that genetic variants can be filtered from the <strong>FILTERS MENU</strong>&rarr; <strong>Functional Description</strong> on the left-side menu (remember to press the Update button to apply filters).</p><br>
+															<div class="pictureStyle" style="text-align:center">
+																<img src="Figure_8.png" alt="Figure_8" width="90%" height="90%" /><br />
+																<strong>Figure 8 | </strong>Functional characterization of genetic variants in the <i>EDAR</i> gene region as shown in PopHumanVar.
+															</div><br><br>
+
+															<h4>Stats Visualization&rarr; Age Information</h4>
+															<p style="text-align: left;">The tab <strong>Stats Visualization&rarr; Age Information</strong>&#8212; displays the estimated age of the genetic variants in the region, according to the Atlas of Variant Age (Figure 8). Filtering options can be accessed from the <strong>FILTERS MENU</strong>&rarr; <strong>Age Information</strong> on the left-side menu and are especially relevant, as variants can be narrowed to a certain period or filtered by quality score, among others. Please note that some filters are applied by default to keep information manageable, so not all genetic variants are displayed in the default view. Remember to press the Update button to apply filters.</p><br>
+															<div class="pictureStyle" style="text-align:center">
+																<img src="Figure_9.png" alt="Figure_9" width="70%" height="70%" /><br />
+																<strong>Figure 9 | </strong>Age information of genetic variants in the <i>EDAR</i> gene region as shown in PopHumanVar.
+															</div><br><br>
+
+															<h4>Stats Visualization&rarr; Summary Report</h4>
+															<p style="text-align: left;">The last tab <strong>Stats Visualization&rarr; Summary Report</strong>&#8212; wraps together all the information into one single graph and a set of summary cards (Figure 10). The plot represents iSAFE scores (y-axis) for all variants along the region of interest (x-axis). The highest SnpEFF effect of each variant is displayed (color, see legend), as well as its combined iHS + nSL value (size). The rest of the information is displayed in the hoover, accessible by dragging the mouse around the plot. Cards summarize the most relevant information of each dataset. In both the plot and the summary cards, data is displayed for one specific population (which can be selected in the additional right-side menu in this tab &#8212;<strong>PLOT FILTERS</strong>&#8212;; remember to press the Refresh button to apply).</p><br>
+															<div class="pictureStyle" style="text-align:center">
+																<img src="Figure_10.png" alt="Figure_10" width="90%" height="90%" /><br />
+																<strong>Figure 10 | </strong>Characterization and prioritization summary report of genetic variants in the <i>EDAR</i> gene region for the CHB population, as shown in PopHumanVar.
+															</div><br><br>
+
+															<a id="Downloading"><h3>3. Downloading raw data</h3></a>
+															<p style="text-align: left;">To download raw data, click <strong>Download</strong> from the left-side menu. You can either download specific data from the region of interest (<strong>Download&rarr; Current Region</strong>), or batch download all the data from PopHumanVar given one or more sets of coordinates (<strong>Download&rarr; Batch Download</strong>). In the first case, you need to specify the exact data you want to retrieve by using the right-side menu of this tab (remember to press the Refresh button to apply).
+															</p><br>
+															<div class="pictureStyle" style="text-align:center">
+																<img src="Figure_11.png" alt="Figure_11" width="90%" height="90%" /><br />
+																<strong>Figure 11 | </strong>Download raw data in PopHumanVar.
+															</div><br><br>
+
+															<div id="line"><hr  style="" /></div>
+
+
+															<div id="RefBox">
+																<h3>References</h3>
+																<br>
+																<p><a id="Ref1">1.</a> The 1000 Genomes Project Consortium. (2015). A global reference for human genetic variation. <i>Nature</i>, 526(7571), 68-74</p>
+																<p><a id="Ref2">2.</a> Voight, B. F., Kudaravalli, S., Wen, X., & Pritchard, J. K. (2006). A map of recent positive selection in the human genome. <i>PLoS Biol</i>, 4(3), e72 </p>
+																<p><a id="Ref3">3.</a> Ferrer-Admetlla, A., Liang, M., Korneliussen, T., & Nielsen, R. (2014). On detecting incomplete soft or hard selective sweeps using haplotype structure. <i>Molecular biology and evolution</i>, 31(5), 1275-1291.</p>
+																<p><a id="Ref4">4.</a> Akbari, A., Vitti, J. J., Iranmehr, A., Bakhtiari, M., Sabeti, P. C., Mirarab, S., and Bafna, V. (2018). Identifying the favored mutation in a positive selective sweep. <i>Nature methods</i>, 15(4), 279. </p>
+																<p><a id="Ref5">5.</a> Szpiech, Z. A., & Hernandez, R. D. (2014). selscan: an efficient multithreaded program to perform EHH-based scans for positive selection. <i>Molecular biology and evolution</i>, 31(10), 2824-2827. </p>
+																<p><a id="Ref6">6.</a> Bhérer, C., Campbell, C. L., and Auton, A. (2017). Refined genetic maps reveal sexual dimorphism in human meiotic recombination at multiple scales. <i>Nature communications</i>, 8(1), 1-9. </p>
+																<p><a id="Ref7">7.</a> Cingolani, P., Platts, A., Wang, L. L., Coon, M., Nguyen, T., Wang, L., ... & Ruden, D. M. (2012). A program for annotating and predicting the effects of single nucleotide polymorphisms, SnpEff: SNPs in the genome of Drosophila melanogaster strain w1118; iso-2; iso-3. <i>Fly</i>, 6(2), 80-92. </p>
+																<p><a id="Ref8">8.</a> Boyle, A. P., Hong, E. L., Hariharan, M., Cheng, Y., Schaub, M. A., Kasowski, M., ... & Snyder, M. (2012). Annotation of functional variation in personal genomes using RegulomeDB. <i>Genome research</i>, 22(9), 1790-1797. </p>
+																<p><a id="Ref9">9.</a> Landrum, M. J., Lee, J. M., Riley, G. R., Jang, W., Rubinstein, W. S., Church, D. M., & Maglott, D. R. (2014). ClinVar: public archive of relationships among sequence variation and human phenotype. <i>Nucleic acids research</i>, 42(D1), D980-D985. </p>
+																<p><a id="Ref10">10.</a> MacArthur, J., Bowler, E., Cerezo, M., Gil, L., Hall, P., Hastings, E., ... & Parkinson, H. (2017). The new NHGRI-EBI Catalog of published genome-wide association studies (GWAS Catalog). <i>Nucleic acids research</i>, 45(D1), D896-D901. </p>
+																<p><a id="Ref11">11.</a> Piñero, J., Queralt-Rosinach, N., Bravo, A., Deu-Pons, J., Bauer-Mehren, A., Baron, M., ... & Furlong, L. I. (2015). DisGeNET: a discovery platform for the dynamical exploration of human diseases and their genes. <i>Database</i>, 2015.</p>
+																<p><a id="Ref12">12.</a> Albers, P. K., & McVean, G. (2020). Dating genomic variants and shared ancestry in population-scale sequencing data. <i>PLoS biology</i>, 18(1), e3000586. </p>
+																<p><a id="Ref13">13.</a> Kamberov, Y. G., Wang, S., Tan, J., Gerbault, P., Wark, A., Tan, L., ... & Sabeti, P. C. (2013). Modeling recent human evolution in mice by expression of a selected <i>EDAR</i> variant. <i>Cell</i>, 152(4), 691-702. </p>
+																<p><a id="Ref14">14.</a> Murga-Moreno, J., Coronado-Zamora, M., Bodelón, A., Barbadilla, A., and Casillas, S. (2019). PopHumanScan: the online catalog of human genome adaptation. <i>Nucleic acids research</i>, 47(D1), D1080-D1089. </p>
+																<p><a id="Ref15">15.</a> Casillas, S., Mulet, R., Villegas-Mirón, P., Hervas, S., Sanz, E., Velasco, D., ... and Barbadilla, A. (2018). PopHuman: the human population genomics browser. <i>Nucleic acids research</i>, 46(D1), D1003-D1010.</p>
+																<br>
+															</div>
+															<br><br><br>
+														</body>
+														</html>

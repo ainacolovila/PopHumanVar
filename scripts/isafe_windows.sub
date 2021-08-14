@@ -1,0 +1,10 @@
+executable=/bin/singularity
+arguments="exec --bind /data/bioinfo/common/1000GP_recoded/:/data/bioinfo/common/1000GP_recoded/ --bind /data/bioinfo/scratch/isafe/$(POP)/:/data/bioinfo/scratch/isafe/$(POP)/ /data/bioinfo/software/isafe_latest.sif python2.7 /iSAFE/src/isafe.py --input /data/bioinfo/common/1000GP_recoded/chr$(NCHR)/chr$(NCHR)_$(POP).vcf.gz --out /data/bioinfo/scratch/isafe/$(POP)/$(POP)_$(NCHR)_$(START)_$(END)  --region $(NCHR):$(START)-$(END) --AA /data/bioinfo/common/1000GP_recoded/homo_sapiens_ancestor_GRCh37_e71/homo_sapiens_ancestor_$(NCHR).fa --IgnoreGaps --MaxGapSize 20000 --MaxRank 300"
+
+error  = err/err.isafe.$(NCHR)_$(START)_$(END) 
+#log    = log/log.isafe.$(NCHR)_$(START)_$(END) 
+#output = out/out.isafe.$(NCHR)_$(START)_$(END)
+
++flavour="short"
+
+queue NCHR,START,END from /nfs/pic.es/user/j/jmurgamo/isafe/$(FILE)
