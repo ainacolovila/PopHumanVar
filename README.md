@@ -71,7 +71,7 @@ The PopHumanVar interface is divided into four main sections: (i) Stats Visualiz
 <br>
 <br>
 <div align="center">
-<img src="www/PopHumanVar_Figure2.png" alt="fig2" width="40%" display="inline-block">
+<img src="www/PopHumanVar_Figure2.png" alt="fig2" width="90%" display="inline-block">
 </div>
 <br>
 <p align="right">(<a href="#top">back to top</a>)</p>
