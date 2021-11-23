@@ -8,12 +8,12 @@
 <br />
 <div align="center">
   <a href="https://github.com/ainacolovila/PopHumanVar">
-    <img src="www/logo2.png" alt="Logo" width="100" height="100">
+    <img src="www/logo2.png" alt="Logo" width="120" height="120">
   </a>
 
 <h1 align="center">PopHumanVar</h1>
   <h2 align="center">An interactive application for the functional characterization and prioritization of adaptive genomic variants in humans</h2>
-             
+  An online application that is designed to facilitate the exploration and thorough analysis of candidate genomic regions under selection, generating useful summary reports of prioritized variants that are putatively causal of recent selective sweeps. It compiles and graphically represents selection statistics based on linkage disequilibrium, a comprehensive set of functional annotations, and recent genealogical estimations of variant age for SNVs of the 26 populations of the phase 3 of the 1000GP. 
   <p align="center">
     <br />
     <a href="https://github.com/ainacolovila/PopHumanVar"><strong>Explore the docs »</strong></a>
@@ -36,25 +36,29 @@
     <li><a href="#built-with">Built With</a></li>
     <li><a href="#tutorial">Tutorial</a></li>
     <li><a href="#documentation">Documentations</a></li>
+    <li><a href="#copy-right">Copy Right</a></li>
+    <li><a href="#author">Author</a></li>
+    <li><a href="#cite-us">Cite Us</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#refs">References</a></li>
   </ol>
 </details>
-
+<br>
+<br>
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 PopHumanVar is an interactive online application that is designed to facilitate the exploration and thorough analysis of candidate genomic regions under selection, generating useful summary reports of prioritized variants that are putatively causal of recent selective sweeps.
+<br>
 Available at: https://pophumanvar.uab.cat/
 <br>
 <br>
 <div align="center">
-<img src="www/Figure_1.png" alt="fig1" width="60%" display="inline-block">
+<img src="www/Figure_1.png" alt="fig1" width="75%" display="inline-block">
 </div>
 <br>
 <p align="right">(<a href="#top">back to top</a>)</p>
-<br>
 <br>
 
 ## Built With
@@ -62,7 +66,6 @@ PopHumanVar is based on the [Shiny](https://shiny.rstudio.com/) framework for de
 PopHumanVar is served with Apache on a CentOS 7.2 Linux x64 server with 16 Intel Xeon 2.4 GHz processors and 32 GB RAM. All data, tools and support resources provided by the PopHumanVar database are open and freely available at https://pophumanvar.uab.cat. PopHumanVar is accessible and legible on computer, phone and tablet screens.
 <br>
 <p align="right">(<a href="#top">back to top</a>)</p>
-<br>
 <br>
 
 <!-- STRUCTURE -->
@@ -76,15 +79,12 @@ The PopHumanVar interface is divided into four main sections: (i) Stats Visualiz
 <br>
 <p align="right">(<a href="#top">back to top</a>)</p>
 <br>
-<br>
-
 
 <!-- TUTORIAL -->
 ## Tutorial
 Check the app to blabla
 <br>
 <p align="right">(<a href="#top">back to top</a>)</p>
-<br>
 <br>
 
 <!-- DOCUMENTATION -->
@@ -112,6 +112,41 @@ See the [open issues](https://github.com/ainacolovila/PopHumanVar/issues) for a 
 <br>
 <p align="right">(<a href="#top">back to top</a>)</p>
 <br>
+
+<!-- CITE US -->
+## Cite Us
+Please cite this reference for results obtained with PopHumanVar:
+<p align="center"> Aina Colomer-Vilaplana, Jesús Murga-Moreno, Aleix Canalda-Baltrons, Clara Inserte, Daniel Soto, Marta Coronado-Zamora, Antonio Barbadilla, Sònia Casillas (2021) <strong>PopHumanVar: an interactive application for the functional characterization and prioritization of adaptive genomic variants in humans.</strong> <i>Nucleic Acids Research</i>, Advance access gkab925 (<a href="https://doi.org/10.1093/nar/gkab925" target="_blank">https://doi.org/10.1093/nar/gkab925</a>)</p>	
+<br>
+<p align="right">(<a href="#top">back to top</a>)</p>
+<br>
+
+<!-- AUTHOR -->
+## Authors
+![logo_uab](www/uab.png)![logo_ibb](www/ibb.png)
+PopHumanVar was created at the Genetics and Microbiology Department and Institute of Biotechnology and Biomedicine of [Universitat Autònoma de Barcelona](https://www.uab.cat/) by [Aina Colomer i Vilaplana](https://portalrecerca.uab.cat/en/persons/aina-colomer-vilaplana) and [Jesús Murga Moreno](https://orcid.org/0000-0002-1812-0399), PhD Students.
+<br>
+<br>
+<p align="right">(<a href="#top">back to top</a>)</p>
+<br>
+
+<!-- COPY RIGHT -->
+## Copy Right
+[![License](https://google.com)](https://google.com)
+RadaR is licensed under the [GNU General Public License (GPL) v2.0](https://google.com). In a nutshell, this means that this package:
+
+- May be used for commercial purposes
+- May be used for private purposes
+- May be modified, although:
+    - Modifications **must** be released under the same license when distributing the package
+    - Changes made to the code **must** be documented
+- May be distributed, although:
+    - Source code **must** be made available when the package is distributed
+    - A copy of the license and copyright notice **must** be included.
+- Comes with a LIMITATION of liability
+- Comes with NO warranty
+<br>
+<p align="right">(<a href="#top">back to top</a>)</p>
 <br>
 
 <!-- ACKNOWLEDGMENTS -->
@@ -119,7 +154,6 @@ See the [open issues](https://github.com/ainacolovila/PopHumanVar/issues) for a 
 The authors would like to thank the [Port d’Informació Científica (PIC)](https://www.pic.es/)  of the UAB for providing the informatics infrastructure in which most of the population genomics statistics have been computed, and help on using it. We also thank Esteve Sanz for providing some data management utilities, Laia Carrillo for evaluating the PopHumanVar data on several case regions, and members of the Genomics, Bioinformatics and Evolutionary Biology group for testing the database implementation. Finally, we thank two anonymous referees for very helpful comments on the PopHumanVar implementation and manuscript.
 <br>
 <p align="right">(<a href="#top">back to top</a>)</p>
-<br>
 <br>
 
 <!-- CONTACT -->
@@ -143,7 +177,6 @@ The authors would like to thank the [Port d’Informació Científica (PIC)](htt
 </dl>
 <br>
 <p align="right">(<a href="#top">back to top</a>)</p>
-<br>
 <br>
 
 <!-- REFS -->
