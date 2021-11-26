@@ -132,8 +132,8 @@ PopHumanVar was created at the Genetics and Microbiology Department and Institut
 
 <!-- COPY RIGHT -->
 ## Copy Right
-[![License](https://google.com)](https://google.com)
-RadaR is licensed under the [GNU General Public License (GPL) v2.0](https://google.com). In a nutshell, this means that this package:
+[![License](https://google.com)](https://google.com)<br>
+<b>PopHumanVar</b> is licensed under the [GNU General Public License (GPL) v2.0](https://google.com). In a nutshell, this means that this package:
 
 - May be used for commercial purposes
 - May be used for private purposes
