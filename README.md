@@ -8,7 +8,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/ainacolovila/PopHumanVar">
-    <img src="www/logo2.png" alt="Logo" width="120" height="120">
+    <img src="www/logo2.png" alt="Logo" width="115" height="115">
   </a>
 
 <h1 align="center">PopHumanVar</h1>
@@ -55,7 +55,7 @@ Available at: https://pophumanvar.uab.cat/
 <br>
 <br>
 <div align="center">
-<img src="www/Figure_1.png" alt="fig1" width="75%" display="inline-block">
+<img src="www/Figure_1.png" alt="fig1" width="65%" display="inline-block">
 </div>
 <br>
 <p align="right">(<a href="#top">back to top</a>)</p>
