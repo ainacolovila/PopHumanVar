@@ -82,7 +82,7 @@ The PopHumanVar interface is divided into four main sections: (i) Stats Visualiz
 
 <!-- TUTORIAL -->
 ## Tutorial
-Check the app to blabla
+Check the [tutorial](https://pophumanvar.uab.cat/#tutorial). 
 <br>
 <p align="right">(<a href="#top">back to top</a>)</p>
 <br>
