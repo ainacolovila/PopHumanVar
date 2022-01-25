@@ -91,22 +91,30 @@ Check the [tutorial](https://pophumanvar.uab.cat/#tutorial).
 ## Documentation
 Check the app to blabla
 - <b>scripts:</b> here you will find all scripts used to get the information displayed in PopHumanVar
-    - cosa 1
-    - cosa 2
-    - cosa 3
-    - cosa 4
-- <b>README.md</b> this file (hi!)
-- <b>.gitignore</b>
-- <b>aboutUs_text.html</b>
-- <b>intro_text.html</b>
-- <b>tutorial_text.html</b>
-- <b>helpSteps.csv</b>
-- <b>global.R</b>
-- <b>ui.R </b>
-- <b>server.R</b>
+    - createDb.sh
+    - genome_wide_isafe.py
+    - gwas_catalog.py
+    - isafe_windows.sub
+    - isafe_windows_1.txt
+    - isafe_windows_2.txt
+    - nsl.R
+    - run_pvals.py
+    - slider_new.R
+    - slidingWindowsToCondor.py
+    - snpeff.sh 
+- <b>upload_data:</b> scripts used to process the users data. There is also and example of the result they get on the email. 
 - <b>www:</b> here are stored all the imatges used in PopHumanVar tutorial, as well as in the article
     - Fig_NN.png (from the tutorial)
     - PopHumanVar_NN.png (from the article)
+- <b>README.md</b> this file (hi!)
+- <b>.gitignore</b>
+- <b>aboutUs_text.html:</b> html used in the About Us section from the app
+- <b>intro_text.html:</b> html from the popup every time the app runs
+- <b>tutorial_text.html:</b> html with the tutorial informaiton
+- <b>helpSteps.csv:</b> steps that appear at the top right information dialogue in the app
+- <b>global.R:</b> packages & functions, run once before your app starts, any objects here are available to ui.R and server.R files respectively
+- <b>ui.R:</b> users interface
+- <b>server.R:</b> internal funcitons
 
 See the [open issues](https://github.com/ainacolovila/PopHumanVar/issues) for a full list of proposed features (and known issues).
 <br>
