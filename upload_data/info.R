@@ -7,7 +7,7 @@ suppressWarnings(library(RMySQL))
 sqlToDf <- function(chr, coordStart, coordEnd, dbName){
     con <- dbConnect(RMySQL::MySQL(),
 		     user='**********',
-		     password='*********',
+		     password='***',
 		     dbname=dbName,
 		     host='localhost'
 		    )
