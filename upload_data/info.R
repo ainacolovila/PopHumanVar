@@ -6,11 +6,11 @@ suppressWarnings(library(RMySQL))
 # Connect & get SQL informaiton
 sqlToDf <- function(chr, coordStart, coordEnd, dbName){
     con <- dbConnect(RMySQL::MySQL(),
-	    user='shiny',
-		password='shinyServer?21',
-        dbname=dbName,
-        host='localhost'
-	)
+		     user='**********',
+		     password='*********',
+		     dbname=dbName,
+		     host='localhost'
+		    )
     myQuery <- paste0("SELECT * FROM ", 
     	"chr", chr, 
         " WHERE physicalPos BETWEEN ", coordStart, 
