@@ -143,8 +143,7 @@ PopHumanVar was created at the Genetics and Microbiology Department and Institut
 
 <!-- COPY RIGHT -->
 ## Copy Right
-[![License](https://google.com)](https://google.com)<br>
-<b>PopHumanVar</b> is licensed under the [GNU General Public License (GPL) v2.0](https://google.com). In a nutshell, this means that this package:
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) <b>PopHumanVar</b> is licensed under the [GNU General Public License (GPL) v3.0](https://www.gnu.org/licenses/quick-guide-gplv3.html). In a nutshell, this means that this package:
 
 - May be used for commercial purposes
 - May be used for private purposes
