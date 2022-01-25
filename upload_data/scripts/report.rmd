@@ -4,6 +4,7 @@ output: html_document
 runtime: shiny
 ---
 
+[comment]: <> ( PopHumanVar is licensed under the GNU General Public License (GPL) v3.0 (https://github.com/ainacolovila/PopHumanVar/blob/master/LICENSE))
 [comment]: <> (You can adjust the output dimensions by changing "options = list(width = "120%", height = 2200)" at the end of this markdown )
 
 
