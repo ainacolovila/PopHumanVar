@@ -1,5 +1,7 @@
 ## server.R ##
 
+# PopHumanVar is licensed under the GNU General Public License (GPL) v3.0 (https://github.com/ainacolovila/PopHumanVar/blob/master/LICENSE)
+
 server <- function(input, output, session) {
 	
 	###############################################
