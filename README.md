@@ -131,7 +131,7 @@ Please cite this reference for results obtained with PopHumanVar:
 
 <!-- AUTHOR -->
 ## Authors
-![logo_uab](www/uab.png)![logo_ibb](www/ibb.png)
+![Logo_uab](www/uab.png)![logo_ibb](www/ibb.png)
 PopHumanVar was created at the Genetics and Microbiology Department and Institute of Biotechnology and Biomedicine of [Universitat Autònoma de Barcelona](https://www.uab.cat/) by [Aina Colomer i Vilaplana](https://portalrecerca.uab.cat/en/persons/aina-colomer-vilaplana) and [Jesús Murga Moreno](https://orcid.org/0000-0002-1812-0399), PhD Students.
 <br>
 <br>
