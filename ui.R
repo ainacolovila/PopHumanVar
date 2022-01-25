@@ -1,5 +1,8 @@
 ## ui.R ##
 
+
+# PopHumanVar is licensed under the GNU General Public License (GPL) v3.0 (https://github.com/ainacolovila/PopHumanVar/blob/master/LICENSE)
+
 ui <- dashboardPage(
 
 	skin="blue",
