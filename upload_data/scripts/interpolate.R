@@ -1,3 +1,5 @@
+# This script is adapted from https://github.com/cbherer/Bherer_etal_SexualDimorphismRecombination/blob/master/interpolate_maps.R
+
 suppressMessages(suppressWarnings(library(intervals)))
 suppressMessages(library(data.table))
 
