@@ -75,12 +75,12 @@ if [ -s out.ihs.out.100bins.norm ] && [ -s out.nsl.out.100bins.norm ] && [ -s ou
 		echo '# zip information'
 		/bin/zip -r Report_chr2-10950615-12949469.zip *
 		echo '# Sending results'
-		/usr/bin/php /home/pophumanvar/phv_pipeline/mail/phv_mail.php jesus.murga@uab.cat /home/pophumanvar/phv_pipeline/bedouin_edar_recoded_0124_163505/Report_chr2-10950615-12949469.zip
+		/usr/bin/php /home/pophumanvar/phv_pipeline/mail/phv_mail.php email@email.com /home/pophumanvar/phv_pipeline/bedouin_edar_recoded_0124_163505/Report_chr2-10950615-12949469.zip
 	else
 		echo '# Somthing went wrong, sending logfile email'
-		/usr/bin/php /home/pophumanvar/phv_pipeline/mail/phv_mail.php jesus.murga@uab.cat /home/pophumanvar/phv_pipeline/bedouin_edar_recoded_0124_163505/log.txt
+		/usr/bin/php /home/pophumanvar/phv_pipeline/mail/phv_mail.php email@email.com /home/pophumanvar/phv_pipeline/bedouin_edar_recoded_0124_163505/log.txt
 	fi
 else
 	echo '# Somthing went wrong, sending logfile email'
-	/usr/bin/php /home/pophumanvar/phv_pipeline/mail/phv_mail.php jesus.murga@uab.cat /home/pophumanvar/phv_pipeline/bedouin_edar_recoded_0124_163505/log.txt
+	/usr/bin/php /home/pophumanvar/phv_pipeline/mail/phv_mail.php email@email.com /home/pophumanvar/phv_pipeline/bedouin_edar_recoded_0124_163505/log.txt
 fi
