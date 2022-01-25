@@ -1,0 +1,65 @@
+This directory contains all information used and generated while running the pipeline implemented in PopHumanVar. 
+After unzip it, do not move any file outside of this directory.
+The markdown showing the simplified version of the shiny app expectes the files to be organized this way.
+
+----->/ZIP
+----> Report_coordinates.rmd
+This file contains the code to reproduce a simpler version of PopHumanVar with the generated data. T$
+
+----> info.txt.gz
+This file contains all the information from your region (iHS, nSL, iSAFE, SNPeff, Atlas of Variant A$
+
+----> phv_fileName_coordinates.sh
+All commands used to obtain info.txt.gz data
+
+----> log.txt
+Merge of all logs for each program used in phv_filName_coordinates.sh
+
+----> file.vcf (+ tbi)
+This is the data you uploaded. It is used to generate the haplotype visualization panel in the gener$
+
+----> README
+This file, hi!
+
+----> /data 
+Logs and files generated in intermediate steps 	 
+
+------> out.ihs.out
+Raw results from selscan (ihs)
+
+------> out.ihs.log
+Report of selscan process (ihs)
+
+------> out.ihs.out.100bins.norm
+Normalitzation of the results above
+
+------> out.nsl.out
+Raw results from selscan (nsl)
+
+------> out.nsl.log
+Report of selscan process (nsl)
+
+------> out.nsl.out.100bins.norm
+Normalization of the results above
+
+------> out.iSAFE.out
+Results	from iSAFE
+
+------> map.txt
+Recombination map after interpolation
+
+------> rsid.txt
+Physical position & rsid of each entry in your data
+
+------> pos_to_interpolate.txt
+List of	chr, rsid and physical position (intermediat step for interpolation)
+
+
+
+Please, make sure to cite us for any findings obtained usig this data.
+Do not hesitate to contact us in case of doubt at p.pophuman@gmail.com 
+
+
+	PopHumanVar Team
+
+

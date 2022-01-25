@@ -1,0 +1,36 @@
+/home/pophumanvar/phv_pipeline/selscan-linux-1.3.0/selscan --ihs --vcf /home/pophumanvar/phv_pipeline/bedouin_edar_recoded_0124_163505/bedouin_edar_recoded.vcf.gz --out /home/pophumanvar/phv_pipeline/bedouin_edar_recoded_0124_163505/out --map /home/pophumanvar/phv_pipeline/bedouin_edar_recoded_0124_163505/map.txt --cutoff 0.5 --maf 0.05 --max-gap 200000 --gap-scale 20000 --max-extend 1000000 
+v1.3.0
+Calculating  iHS.
+Input filename: /home/pophumanvar/phv_pipeline/bedouin_edar_recoded_0124_163505/bedouin_edar_recoded.vcf.gz
+Map filename: /home/pophumanvar/phv_pipeline/bedouin_edar_recoded_0124_163505/map.txt
+Output file: /home/pophumanvar/phv_pipeline/bedouin_edar_recoded_0124_163505/out.ihs.out
+Threads: 1
+Scale parameter: 20000
+Max gap parameter: 200000
+EHH cutoff value: 0.5
+Alt flag set: no
+--skip-low-freq set. Removing all variants < 0.05.
+Removed 1333 low frequency variants.
+WARNING: Reached chromosome edge before EHH decayed below 0.5. Skipping calculation at P0
+WARNING: Reached chromosome edge before EHH decayed below 0.5. Skipping calculation at P2
+WARNING: Reached chromosome edge before EHH decayed below 0.5. Skipping calculation at P7
+WARNING: Reached chromosome edge before EHH decayed below 0.5. Skipping calculation at P9
+WARNING: Reached chromosome edge before EHH decayed below 0.5. Skipping calculation at P12
+WARNING: Reached chromosome edge before EHH decayed below 0.5. Skipping calculation at P14
+WARNING: Reached chromosome edge before EHH decayed below 0.5. Skipping calculation at P22
+WARNING: Reached chromosome edge before EHH decayed below 0.5. Skipping calculation at P36
+WARNING: Reached chromosome edge before EHH decayed below 0.5. Skipping calculation at P54
+WARNING: Reached chromosome edge before EHH decayed below 0.5. Skipping calculation at P1634
+WARNING: Reached chromosome edge before EHH decayed below 0.5. Skipping calculation at P1810
+WARNING: Reached chromosome edge before EHH decayed below 0.5. Skipping calculation at P1814
+WARNING: Reached chromosome edge before EHH decayed below 0.5. Skipping calculation at P1816
+WARNING: Reached chromosome edge before EHH decayed below 0.5. Skipping calculation at P1817
+WARNING: Reached chromosome edge before EHH decayed below 0.5. Skipping calculation at P1819
+WARNING: Reached chromosome edge before EHH decayed below 0.5. Skipping calculation at P1823
+WARNING: Reached chromosome edge before EHH decayed below 0.5. Skipping calculation at P1825
+WARNING: Reached chromosome edge before EHH decayed below 0.5. Skipping calculation at P1832
+WARNING: Reached chromosome edge before EHH decayed below 0.5. Skipping calculation at P1838
+WARNING: Reached chromosome edge before EHH decayed below 0.5. Skipping calculation at P1843
+WARNING: Reached chromosome edge before EHH decayed below 0.5. Skipping calculation at P1851
+WARNING: Reached chromosome edge before EHH decayed below 0.5. Skipping calculation at P1854
+WARNING: Reached chromosome edge before EHH decayed below 0.5. Skipping calculation at P1860
